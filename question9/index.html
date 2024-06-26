@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="file_js.js"></script>
+</head>
+<body>
+<form id="contactForm" method="post" action="process.php">
+    <label for="method">Method:</label>
+    <select id="method" name="method" onchange="handleMethodChange()">
+        <option value="">Select Method</option>
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+    </select><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
